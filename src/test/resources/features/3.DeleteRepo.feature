@@ -1,11 +1,11 @@
 Feature: Create and edit GitHub repo via API
 
-  Scenario Outline: Authorized user is able to edit new repository
+  Scenario Outline: Authorized user is able to delete existing repository
     Given User is authorized
-    When User creates new GitHub repo <repo name>
     Then User deletes GitHub repo <repo name>
+    And User deletes GitHub repo <repo name 2>
 
     Examples:
-      | repo name |
-      | dzik3     |
+      | repo name | repo name 2     |
+      | dzik      | ksiezycowy-dzik |
 
