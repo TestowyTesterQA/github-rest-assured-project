@@ -1,4 +1,4 @@
-package body;
+package api.body;
 
 import io.restassured.RestAssured;
 import org.hamcrest.Matchers;

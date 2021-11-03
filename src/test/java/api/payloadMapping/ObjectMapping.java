@@ -1,4 +1,4 @@
-package payloadMapping;
+package api.payloadMapping;
 import com.User;
 import io.restassured.RestAssured;
 import org.testng.annotations.Test;

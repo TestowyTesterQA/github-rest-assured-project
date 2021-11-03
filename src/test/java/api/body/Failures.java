@@ -1,4 +1,4 @@
-package body;
+package api.body;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;

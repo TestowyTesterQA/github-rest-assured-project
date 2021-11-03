@@ -9,8 +9,8 @@ import io.restassured.RestAssured;
 public class GitHubSteps {
 
     public static final String BASE_URL = "https://api.github.com/user/repos";
-    public static final String TOKEN = "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";
-    public static final String USERNAME = "dzikTestowy";
+    public static final String TOKEN = "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";
+//    public static final String USERNAME = "dzikTestowy";
 
     @Given("User is authorized")
     public void user_is_authorized() {
@@ -40,7 +40,7 @@ public class GitHubSteps {
                     .header("Authorization", "token " + TOKEN)
                     .body("{\"name\": \"" + new_repo_name + "\"")
                 .when()
-                    .patch(BASE_URL + USERNAME + "/" + current_repo_name)
+                    .patch("https://api.github.com/repos/dzikTestowy/" + current_repo_name)
                 .then()
                     .statusCode(200);
     }
@@ -51,7 +51,7 @@ public class GitHubSteps {
                 .given()
                     .header("Authorization", "token " + TOKEN)
                 .when()
-                    .delete(BASE_URL + USERNAME + "/" + repo_name)
+                    .delete("https://api.github.com/repos/dzikTestowy/" + repo_name)
                 .then()
                     .statusCode(204);
     }
