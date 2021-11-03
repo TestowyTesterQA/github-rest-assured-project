@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Main Test Suite" verbose="2">
+
+    <test name="Body tests">
+        <packages>
+            <package name="api.body"/>
+        </packages>
+    </test>
+
+    <test name="Header tests">
+        <!--        <classes>-->
+        <!--            <class name="api.body.CheckLoginValue"/>-->
+        <!--        </classes>-->
+        <packages>
+            <package name="api.headers"/>
+        </packages>
+    </test>
+
+    <test name="Payload tests">
+        <classes>
+            <class name="api.payloadMapping.ObjectMapping"/>
+        </classes>
+    </test>
+
+</suite>

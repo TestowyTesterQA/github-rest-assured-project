@@ -17,7 +17,7 @@ public class ObjectMapping {
 
         assertEquals(user.getLogin(), "dzikTestowy");
         assertEquals(user.getId(), 93586821);
-        assertEquals(user.getPublicRepos(), 2);
+        assertEquals(user.getPublicRepos(), 0);
 
     }
 

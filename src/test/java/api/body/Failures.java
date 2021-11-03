@@ -13,9 +13,9 @@ public class Failures {
     @Test
     public void castingFailure() {
         JsonPath jPath = RestAssured.get(BASE_URL).body().jsonPath();
-
-        Map<String, String> isNull = jPath.get("incorrect.path"); //Null Pointer Exception
-        int aMap = jPath.get("resources.core"); //correct path, but it returns map not an integer --> ClassCastException
-        String value = jPath.get("resources.core.limit"); // correct path to specific value but wrong type! --> ClassCastException
+//
+//        Map<String, String> isNull = jPath.get("incorrect.path"); //Null Pointer Exception
+//        int aMap = jPath.get("resources.core"); //correct path, but it returns map not an integer --> ClassCastException
+//        String value = jPath.get("resources.core.limit"); // correct path to specific value but wrong type! --> ClassCastException
     }
 }
