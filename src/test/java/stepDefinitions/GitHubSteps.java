@@ -9,7 +9,7 @@ import io.restassured.RestAssured;
 public class GitHubSteps {
 
     public static final String BASE_URL = "https://api.github.com/user/repos";
-    public static final String TOKEN = "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";
+    public static final String TOKEN = "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";
 //    public static final String USERNAME = "dzikTestowy";
 
     @Given("User is authorized")

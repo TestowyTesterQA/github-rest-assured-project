@@ -9,9 +9,6 @@
     </test>
 
     <test name="Header tests">
-        <!--        <classes>-->
-        <!--            <class name="api.body.CheckLoginValue"/>-->
-        <!--        </classes>-->
         <packages>
             <package name="api.headers"/>
         </packages>
